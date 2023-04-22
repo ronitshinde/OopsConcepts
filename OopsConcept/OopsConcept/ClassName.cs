@@ -8,9 +8,15 @@ namespace OopsConcept
 {
     public class ClassName
     {
+        //This is non-parameterised method.
         public void PrintName()
         {
             Console.WriteLine("Bridgelabz");
+        }
+        //This is parameterised method.
+        public void PrintType(string name)
+        {
+            Console.WriteLine(name);
         }
     }
 }
