@@ -13,6 +13,7 @@ namespace OopsConcept
             ClassName name = new ClassName();
             name.PrintName();
             name.PrintType("Csharp");
+            Constructor nonParameterised = new Constructor();
             //It will hold the screen until the key is pressed.
             Console.ReadKey();
         }
