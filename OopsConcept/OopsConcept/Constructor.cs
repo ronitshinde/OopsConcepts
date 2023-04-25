@@ -6,14 +6,20 @@ using System.Threading.Tasks;
 
 namespace OopsConcept
 {
-    public class Constructor
+    public class Constructor : InterfaceType
     {
         //Constructor does not have any return type.
         //Name should be same as the class name.
         //This is a non-parameterised constructor.
-        public Constructor()
+        ClassName subject;
+        int One;
+        string column;
+        public Constructor(ClassName input, int rowOne, string columnOne)
         {
             Console.WriteLine("Hello World");
+            this.subject = input;
+            this.One = rowOne;
+            column = columnOne;
         }
         //This is a parameterised constructor.
         public string query;
@@ -34,7 +40,7 @@ namespace OopsConcept
         {
             this.numberAdd = numOne + numTwo;
             Console.WriteLine(numberAdd);
-            this.numberSub = numOne- numTwo;
+            this.numberSub = numOne - numTwo;
             Console.WriteLine(numberSub);
         }
         public Constructor(string alpha, string beta, string gamma)
@@ -49,6 +55,14 @@ namespace OopsConcept
             Console.WriteLine(input);
             this.num = value;
             Console.WriteLine(num);
+        }
+        public void WithoutImplementionMethod()
+        {
+            Console.WriteLine("Hi there this is constructor.cs class");
+        }
+        public Constructor()
+        {
+
         }
     }
 }
