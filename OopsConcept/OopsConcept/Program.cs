@@ -16,6 +16,12 @@ namespace OopsConcept
             name.WithoutImplementionMethod();
             Constructor parameter = new Constructor();
             parameter.WithoutImplementionMethod();
+            //This is inherited class
+            ParentClass parent = new ParentClass();
+            Console.WriteLine(parent.name = "Ronit");
+            parent.TestName();
+            parent.Class();
+            //This is parameterised and non parameterised method.
             name.PrintName();
             name.PrintType("Csharp");
             Constructor nonParameterised = new Constructor(name, 25, "David");
