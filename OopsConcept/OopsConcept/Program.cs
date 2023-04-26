@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace OopsConcept
 {
-    public class Program
+    public class Program : TypeAbstract
     {
         const int value = 10;
         static void Main(string[] args)
@@ -33,11 +34,22 @@ namespace OopsConcept
             Constructor withParameters = new Constructor(7, 4);
             Constructor withPara = new Constructor("Seven", "Eight", "Nine");
             Constructor withBoolValue = new Constructor(true, 77);
+            //This is abstract method
+            Program program = new Program();
+            program.NonAbstractMethod();
+            program.AbstractMethod();
             //It will hold the screen until the key is pressed.
             Console.ReadKey();
         }
+        //It will Override keyword the base class method in the derived class.
+        public override void AbstractMethod()
+        {
+            Console.WriteLine("This is overrided/implemented abstract method");
+        }
     }
 }
+
+
 
 
 
