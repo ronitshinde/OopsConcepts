@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ClassName.cs" />
     <Compile Include="Constructor.cs" />
+    <Compile Include="Enum.cs" />
     <Compile Include="InterfaceType.cs" />
     <Compile Include="ParentClass.cs" />
     <Compile Include="Program.cs" />

@@ -21,6 +21,10 @@ namespace OopsConcept
             Console.WriteLine(parent.name = "Ronit");
             parent.TestName();
             parent.Class();
+            //This is Enum
+            Console.WriteLine(Project.Surya);
+            int count = (int)Project.Surya;
+            Console.WriteLine(count);
             //This is parameterised and non parameterised method.
             name.PrintName();
             name.PrintType("Csharp");
