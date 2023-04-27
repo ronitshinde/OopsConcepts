@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OopsConcept
 {
-    public class Program 
+    public class Program
     {
         const int value = 10;
         static void Main(string[] args)
@@ -47,12 +47,20 @@ namespace OopsConcept
             //TypeCasting casting = new TypeCasting();
             //casting.Casting();
 
-            //This is reference type
-            ReferenceType type = new ReferenceType();
-            int value = 9;
-            Console.WriteLine("Value before giving reference : " + value);
-            type.AddReferenceType(ref value);
-            Console.WriteLine("Value after giving reference : " + value);
+            ////This is reference type
+            //ReferenceType type = new ReferenceType();
+            //int value = 9;
+            //Console.WriteLine("Value before giving reference : " + value);
+            //type.AddReferenceType(ref value);
+            //Console.WriteLine("Value after giving reference : " + value);
+
+            //This is method overloading
+            PolymorphismOverLoading loading = new PolymorphismOverLoading();
+            loading.MethodOne();
+            loading.MethodOne(45);
+            loading.MethodOne(7, "BridgeLabz");
+            loading.MethodOne("string", 75);
+            loading.MethodOne("stringOne", "stringTwo");
 
             //It will hold the screen until the key is pressed.
             Console.ReadKey();
