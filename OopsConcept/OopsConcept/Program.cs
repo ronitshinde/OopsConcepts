@@ -43,9 +43,16 @@ namespace OopsConcept
             //program.NonAbstractMethod();
             //program.AbstractMethod();
 
-            //This is type casting
-            TypeCasting casting = new TypeCasting();
-            casting.Casting();
+            ////This is type casting
+            //TypeCasting casting = new TypeCasting();
+            //casting.Casting();
+
+            //This is reference type
+            ReferenceType type = new ReferenceType();
+            int value = 9;
+            Console.WriteLine("Value before giving reference : " + value);
+            type.AddReferenceType(ref value);
+            Console.WriteLine("Value after giving reference : " + value);
 
             //It will hold the screen until the key is pressed.
             Console.ReadKey();
